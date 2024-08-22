@@ -169,6 +169,42 @@ body {
   box-shadow: 0 0.5rem 0.6rem hsla(0, 0%, 0%, 0.3);
 }
 
+.intro__img {
+  position: relative;
+}
+
+.img {
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: 0 0 4px 4px hsla(0, 0%, 0%, 0.2);
+  width: 60%;
+  z-index: 1;
+  transition: z-index 0.1s ease-out;
+}
+.img_1 {
+  top: -1rem;
+  left: 0;
+}
+.img_2 {
+  top: 0;
+  left: 12rem;
+}
+.img_3 {
+  top: 7rem;
+  left: 5rem;
+}
+.img:hover {
+  outline-offset: 5px;
+  outline: 2px hsl(108, 24%, 51%) dotted;
+  z-index: 3;
+  box-shadow: 0 0 6px 6px hsla(0, 0%, 0%, 0.3);
+  transform: scale(1.1);
+}
+
+.intro__img:hover .img:not(:hover) {
+  transform: scale(0.9);
+}
+
 .header {
   background-image: linear-gradient(to left, hsla(108, 58%, 60%, 0.5), hsla(102, 65%, 43%, 0.5)), url(img/hero.jpg);
   background-position: top;

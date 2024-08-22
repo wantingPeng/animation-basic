@@ -4,7 +4,6 @@ $color-1:hsl(108, 58%, 60%, 0.5);
 $color-2:hsl(102, 65%, 43%, 0.5);
 $color-btu:rgba(255, 255, 255);
 $main-font-color:hsl(0, 0%, 100%);
-$box-shadow:hsl(0, 0%, 0%,0.2);
 $main-gray:hwb(67 89% 4%);
 $text-bg-color-1:hsl(108, 24%, 51%);
 $text-bg-color-2:hsl(102, 78%, 63%);
@@ -19,3 +18,7 @@ $p-small:.7rem;
 
 
 $two-colum-gap:3rem;
+
+$box-shadow:hsl(0, 0%, 0%,0.2);
+$box-shadow-biger:hsl(0, 0%, 0%,0.3);
+

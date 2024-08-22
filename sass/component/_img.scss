@@ -1,0 +1,39 @@
+@use "../abstract/_all" as *;
+
+.intro__img{
+  position: relative;
+ 
+}
+.img{
+position: absolute;
+border-radius:3px;
+box-shadow: 0 0 4px 4px $box-shadow;
+width: 60%;
+z-index: 1;
+transition:z-index .1s ease-out ;
+  &_1{
+    top:-1rem;
+left: 0;
+
+  }
+  &_2{
+    top: 0;
+left: 12rem;
+
+  }
+  &_3{
+    top:7rem;
+left: 5rem;
+  }
+  &:hover{
+    outline-offset: 5px;
+    outline: 2px $text-bg-color-1 dotted;
+    z-index: 3;
+    box-shadow: 0 0 6px 6px $box-shadow-biger;
+ transform: scale(1.1);
+  }
+
+}
+.intro__img:hover .img:not(:hover) {
+  transform: scale(0.9);
+      }
