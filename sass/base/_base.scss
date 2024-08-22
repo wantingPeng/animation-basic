@@ -1,0 +1,21 @@
+@use "../abstract/_all" as *;
+
+
+
+*,::after, ::before{
+  margin: 0;
+  padding: 0;
+  box-sizing:inherit;
+}
+
+html{
+  /* font-size: 10px; */
+  font-size: 62.5%;  /* 10/16=0.625 */
+}
+body{
+font-size: 1rem;
+line-height: 1.7;
+font-family: 'Lato';
+box-sizing: border-box;
+
+}

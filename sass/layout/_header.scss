@@ -1,0 +1,46 @@
+@use "../abstract/_all" as *;
+
+
+
+
+.header{
+  background-image:linear-gradient(to left, $color-1, $color-2) ,url(img/hero.jpg);
+  height: 100vh;
+  background-size: cover;
+  clip-path:polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
+  position: relative;
+  &__logo-box{
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+  }
+  &__logo{
+    height: 20px;
+  }
+  &__content-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: $main-font-color;
+  }
+
+   &__text{
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+
+    &_main{
+
+      font-size: 5rem;
+      animation:moveInLeft .6s ease-out ;
+      }
+    &_sub{
+   
+      font-size: 1.5rem;
+      animation: moveInRight .6s ease-out
+    }
+  }
+
+}
