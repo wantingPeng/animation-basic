@@ -1,0 +1,42 @@
+@use "../abstract/_all" as *;
+
+.header{
+ 
+  &__text{
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+
+  &_main{
+
+    font-size:$font-h1;
+    animation:moveInLeft .6s ease-out ;
+    }
+  &_sub{
+ 
+    font-size:$font-h4;
+    animation: moveInRight .6s ease-out
+  }
+}
+}
+
+.intro__headline{
+  display: inline-block;
+  background-image: linear-gradient(to left, $text-bg-color-1, $text-bg-color-2);
+  background-clip:text;
+  color: transparent;
+  font-size:$font-h4;
+}
+
+.intro__title{
+  font-size:$font-h5;
+letter-spacing: 1px;
+white-space:nowrap;
+color: $head-color;
+} 
+
+.intro__content{
+  letter-spacing: .6px;
+
+  font-size: $p-small;
+}

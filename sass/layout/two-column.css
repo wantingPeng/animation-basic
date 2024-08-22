@@ -1,0 +1,21 @@
+.two-column {
+  border: 1px solid red;
+  max-width: 85%;
+  margin: 0 auto;
+}
+.two-column::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.two-column .intro__text {
+  margin-right: 3rem;
+  border: 1px solid rgb(56, 54, 199);
+  float: left;
+  width: calc((100% - 3rem) / 2);
+}
+.two-column .intro__img {
+  border: 1px solid rgb(56, 54, 199);
+  float: left;
+  width: calc((100% - 3rem) / 2);
+}/*# sourceMappingURL=two-column.css.map */

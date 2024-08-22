@@ -1,0 +1,20 @@
+
+@mixin float-two-colu($two-colum-gap){
+  float: left;
+    width: calc((100% - #{$two-colum-gap})/2);
+  }
+
+  @mixin button-click($background-color){
+    &:hover{
+      transform: translateY(-.2rem);
+      @if $background-color == rgba(60, 95, 43,0.5){
+        background-color: rgba($background-color,0.5);
+        color: aliceblue;
+      }
+    }
+      &:active{
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem .6rem hsl(0, 0%, 0%,0.3);
+      }
+  
+  }

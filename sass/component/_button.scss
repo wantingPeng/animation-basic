@@ -4,13 +4,17 @@
 
 
 
-.button{
-  &:link{
-  font-size: 1.6rem;
+[class^="button"]{
   display:inline-block;
-  color:$main-font-color;
   box-shadow: 0 .7rem .6rem $box-shadow;
-text-decoration: none;
+  text-decoration: none;
+}
+
+.header__button{
+  @include button-click($color-btu); 
+  &{
+  font-size: 1.6rem;
+  color:$main-font-color;  
 background-color: $color-btu;
 padding: 0 1rem;
 border-radius: .5rem;
@@ -21,18 +25,7 @@ animation:button-hover 1s;
   &:visited{
     color: rgb(128, 128, 128);
   }
-  &:hover{
-  transform: translateY(-.2rem);
-    &::after{
-    transform: scaleX(1.3) scaleY(1.2);
-    opacity: 0;
-  }
-  }
-  &:active{
-  
-    transform: translateY(-.1rem);
-    box-shadow: 0 .5rem .6rem hsl(0, 0%, 0%,0.3);
-  }
+
   &::after{
     content: '';
   height: 100%;
@@ -48,4 +41,14 @@ animation:button-hover 1s;
   animation: button-hover 0.3s ease-in-out;
 
 }
+&:hover::after{
+  transform: scaleX(1.3) scaleY(1.2);
+  opacity: 0;
+}
+  }
+
+.intro__button{
+  @include  button-click(rgba($head-color,0.5));
+  color:$head-color;
+   transition: background-color .6s, color .6s ;
 }
