@@ -1,6 +1,6 @@
 @use "../abstract/_all" as *;
 
-.intro__img{
+.intro__right{
   position: relative;
  
 }
@@ -34,6 +34,6 @@ left: 5rem;
   }
 
 }
-.intro__img:hover .img:not(:hover) {
+.intro__right:hover .img:not(:hover) {
   transform: scale(0.9);
       }

@@ -20,7 +20,7 @@
 }
 }
 
-.intro__headline{
+.headline{
   display: inline-block;
   background-image: linear-gradient(to left, $text-bg-color-1, $text-bg-color-2);
   background-clip:text;
@@ -28,14 +28,14 @@
   font-size:$font-h4;
 }
 
-.intro__title{
+.text__title{
   font-size:$font-h5;
 letter-spacing: 1px;
-white-space:nowrap;
+
 color: $head-color;
 } 
 
-.intro__content{
+.text__content{
   letter-spacing: .6px;
 
   font-size: $p-small;

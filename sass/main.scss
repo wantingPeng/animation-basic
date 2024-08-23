@@ -6,9 +6,13 @@
 
 @use "component/button";
 @use "component/img";
+@use "component/icon";
 
 @use "layout/header"; 
-@use "layout/two-column.scss";
+@use "layout/two-column";
+@use "layout/four-column";
+
+
 
 @use "pages/home";
 

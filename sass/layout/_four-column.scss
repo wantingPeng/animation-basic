@@ -1,0 +1,15 @@
+@use "../abstract/_all" as *;
+
+.four-column{
+  max-width: 80%;
+  margin: 0 auto;
+  border: 1px solid red;
+@include clear-float;
+  &__box{
+    border: 1px solid rgb(43, 0, 255);
+width: calc((100% - 3 *3rem) /4);
+float: left;
+    &:not(:last-child){margin-right: 3rem;}
+  }
+
+}

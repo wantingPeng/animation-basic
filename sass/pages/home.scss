@@ -1,8 +1,26 @@
 @use "../abstract/_all" as *;
 
 .intro{
-padding: 10rem 0;
-margin: -20vh 0;
-background-color: $main-gray;
-text-align: center;
+padding: 11rem 0;
+margin-top: -20vh;
 }
+
+
+.info{
+  background-image:linear-gradient(to bottom, $color-1, $color-2) ,url(img/nat-4.jpg);
+  background-size: cover;
+  padding: 10rem 0;
+  &__card{
+   padding: 1rem;
+   background-color: rgba($main-gray, 0.9);
+   box-shadow: 0 0 3px 3px $box-shadow;
+   transition: box-shadow .6s,transform .6s;
+    border-radius: 3px;
+   &:hover{
+    scale: (1.1);
+    box-shadow: 0 0 3px 3px $box-shadow-biger;
+
+   }
+  }
+
+   }

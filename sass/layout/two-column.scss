@@ -5,19 +5,15 @@
   max-width: 85%;
   margin: 0 auto;
 
-  &::after{
-    display: table;
-    content: "";
-    clear: both;
-  }
-  .intro__text{
+  @include clear-float;
+  .intro__left{
     margin-right: $two-colum-gap;
     border: 1px solid rgb(56, 54, 199);
     
     @include float-two-colu($two-colum-gap);
     
   }
-  .intro__img{
+  .intro__right{
     border: 1px solid rgb(56, 54, 199);
     @include float-two-colu($two-colum-gap);
     

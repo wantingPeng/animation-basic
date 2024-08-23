@@ -1,6 +1,21 @@
 .intro {
+  padding: 11rem 0;
+  margin-top: -20vh;
+}
+
+.info {
+  background-image: linear-gradient(to bottom, hsla(108, 58%, 60%, 0.5), hsla(102, 65%, 43%, 0.5)), url(img/nat-4.jpg);
+  background-size: cover;
   padding: 10rem 0;
-  margin: -20vh 0;
-  background-color: hwb(67 89% 4%);
-  text-align: center;
+}
+.info__card {
+  padding: 1rem;
+  background-color: rgba(243, 245, 227, 0.9);
+  box-shadow: 0 0 3px 3px hsla(0, 0%, 0%, 0.2);
+  transition: box-shadow 0.6s, transform 0.6s;
+  border-radius: 3px;
+}
+.info__card:hover {
+  scale: 1.1;
+  box-shadow: 0 0 3px 3px hsla(0, 0%, 0%, 0.3);
 }/*# sourceMappingURL=home.css.map */

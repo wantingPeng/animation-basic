@@ -49,6 +49,8 @@ body {
   font-family: "Lato";
   box-sizing: border-box;
   margin: 0 1rem;
+  text-align: center;
+  background-color: rgb(243, 245, 227);
 }
 
 .header__text {
@@ -65,7 +67,7 @@ body {
   animation: moveInRight 0.6s ease-out;
 }
 
-.intro__headline {
+.headline {
   display: inline-block;
   background-image: linear-gradient(to left, hsl(108, 24%, 51%), hsl(102, 78%, 63%));
   background-clip: text;
@@ -73,14 +75,13 @@ body {
   font-size: 2rem;
 }
 
-.intro__title {
+.text__title {
   font-size: 0.9rem;
   letter-spacing: 1px;
-  white-space: nowrap;
   color: rgb(60, 95, 43);
 }
 
-.intro__content {
+.text__content {
   letter-spacing: 0.6px;
   font-size: 0.7rem;
 }
@@ -168,7 +169,7 @@ body {
   box-shadow: 0 0.5rem 0.6rem hsla(0, 0%, 0%, 0.3);
 }
 
-.intro__img {
+.intro__right {
   position: relative;
 }
 
@@ -200,8 +201,13 @@ body {
   transform: scale(1.1);
 }
 
-.intro__img:hover .img:not(:hover) {
+.intro__right:hover .img:not(:hover) {
   transform: scale(0.9);
+}
+
+.icon {
+  font-size: 2rem;
+  color: rgb(45, 72, 59);
 }
 
 .header {
@@ -235,27 +241,61 @@ body {
   margin: 0 auto;
 }
 .two-column::after {
-  display: table;
   content: "";
   clear: both;
+  display: table;
 }
-.two-column .intro__text {
+.two-column .intro__left {
   margin-right: 3rem;
   border: 1px solid rgb(56, 54, 199);
   float: left;
   width: calc((100% - 3rem) / 2);
 }
-.two-column .intro__img {
+.two-column .intro__right {
   border: 1px solid rgb(56, 54, 199);
   float: left;
   width: calc((100% - 3rem) / 2);
 }
 
+.four-column {
+  max-width: 80%;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.four-column::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.four-column__box {
+  border: 1px solid rgb(43, 0, 255);
+  width: calc((100% - 9rem) / 4);
+  float: left;
+}
+.four-column__box:not(:last-child) {
+  margin-right: 3rem;
+}
+
 .intro {
+  padding: 11rem 0;
+  margin-top: -20vh;
+}
+
+.info {
+  background-image: linear-gradient(to bottom, hsla(108, 58%, 60%, 0.5), hsla(102, 65%, 43%, 0.5)), url(img/nat-4.jpg);
+  background-size: cover;
   padding: 10rem 0;
-  margin: -20vh 0;
-  background-color: hwb(67 89% 4%);
-  text-align: center;
+}
+.info__card {
+  padding: 1rem;
+  background-color: rgba(243, 245, 227, 0.9);
+  box-shadow: 0 0 3px 3px hsla(0, 0%, 0%, 0.2);
+  transition: box-shadow 0.6s, transform 0.6s;
+  border-radius: 3px;
+}
+.info__card:hover {
+  scale: 1.1;
+  box-shadow: 0 0 3px 3px hsla(0, 0%, 0%, 0.3);
 }
 
 /*# sourceMappingURL=style.css.map */
