@@ -17,9 +17,16 @@
 }
 .info__card:hover {
   scale: 1.1;
-  box-shadow: 0 0 3px 3px hsla(0, 0%, 0%, 0.3);
+  box-shadow: 0 0 6px 6px hsla(0, 0%, 0%, 0.3);
 }
 
 .tours {
   padding: 10rem 0;
+}
+.tours__img {
+  background-image: url(../img/nat-5.jpg);
+  height: 3rem;
+}
+.tours__b_1 {
+  background-color: hsla(102, 65%, 43%, 0.5);
 }/*# sourceMappingURL=home.css.map */

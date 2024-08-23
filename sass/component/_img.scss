@@ -7,7 +7,7 @@
 .img{
 position: absolute;
 border-radius:3px;
-box-shadow: 0 0 4px 4px $box-shadow;
+box-shadow:$box-shadow;
 width: 60%;
 z-index: 1;
 transition:z-index .1s ease-out ;
@@ -29,7 +29,7 @@ left: 5rem;
     outline-offset: 5px;
     outline: 2px $text-bg-color-1 dotted;
     z-index: 3;
-    box-shadow: 0 0 6px 6px $box-shadow-biger;
+    box-shadow:$box-shadow-biger;
  transform: scale(1.1);
   }
 

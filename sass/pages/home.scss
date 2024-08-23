@@ -13,12 +13,12 @@ margin-top: -20vh;
   &__card{
    padding: 1rem;
    background-color: rgba($main-gray, 0.9);
-   box-shadow: 0 0 3px 3px $box-shadow;
+   box-shadow: $box-shadow;
    transition: box-shadow .6s,transform .6s;
     border-radius: 3px;
    &:hover{
     scale: (1.1);
-    box-shadow: 0 0 3px 3px $box-shadow-biger;
+    box-shadow: $box-shadow-biger;
 
    }
   }
@@ -26,6 +26,16 @@ margin-top: -20vh;
    }
 
    .tours{
+
     padding: 10rem 0;
+  
+    &__img{
+      background-image:url(../img/nat-5.jpg);
+      height: 3rem;
+    }
+
+    &__b_1{
+      background-color: $color-2;
+    }
 
    }

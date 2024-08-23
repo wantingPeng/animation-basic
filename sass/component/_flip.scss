@@ -1,6 +1,7 @@
+@use "../abstract/_all" as *;
+
 .flip{
 perspective: 150rem;
-
 height: 15rem;
 position: relative;
 
@@ -8,25 +9,40 @@ position: relative;
     position: absolute;
     height: 15rem;
     width: 100%;
-    backface-visibility: hidden;
-    transition: all 1s;
+   backface-visibility: hidden;
+  transition: transform 1s;
+  border-radius: 3px;
+  box-shadow: $box-shadow;
 
-
-    &_front{
-      background-color:green;
-     
+  }
+  &__front{
+    background-color:green;
+    &_1{
+      background-color:$color-gray;
     }
-    &_back{
-      background-color:rgb(122, 55, 176);
+   
+  }
+  &__back{
+    background-color:rgb(122, 55, 176);
+  transform: rotateY(180deg);
+   &_1{
+    background-color:$color-2;
+
+   }
+   &_2{
+    background-color:$color_yellow;
+
+   }
+   &_3{
+    background-color:$color_blue;
+
+   }
+  }
+
+  &:hover &__front{
     transform: rotateY(180deg);
-
-
     }
-  }
-  &:hover &__card_front{
-  transform: rotateY(-180deg);
-  }
-  &:hover &__card_back{
-    transform: rotateY(0);
-    }
+  &:hover &__back{
+      transform: rotateY(0deg);
+      }
 }
