@@ -1,0 +1,32 @@
+.flip{
+perspective: 150rem;
+
+height: 15rem;
+position: relative;
+
+  &__card{
+    position: absolute;
+    height: 15rem;
+    width: 100%;
+    backface-visibility: hidden;
+    transition: all 1s;
+
+
+    &_front{
+      background-color:green;
+     
+    }
+    &_back{
+      background-color:rgb(122, 55, 176);
+    transform: rotateY(180deg);
+
+
+    }
+  }
+  &:hover &__card_front{
+  transform: rotateY(-180deg);
+  }
+  &:hover &__card_back{
+    transform: rotateY(0);
+    }
+}

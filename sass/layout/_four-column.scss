@@ -7,8 +7,8 @@
 @include clear-float;
   &__box{
     border: 1px solid rgb(43, 0, 255);
-width: calc((100% - 3 *3rem) /4);
-float: left;
+    @include float-colu(3rem, 3, 4 );
+
     &:not(:last-child){margin-right: 3rem;}
   }
 

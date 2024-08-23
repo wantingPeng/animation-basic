@@ -210,6 +210,32 @@ body {
   color: rgb(45, 72, 59);
 }
 
+.flip {
+  perspective: 150rem;
+  height: 15rem;
+  position: relative;
+}
+.flip__card {
+  position: absolute;
+  height: 15rem;
+  width: 100%;
+  backface-visibility: hidden;
+  transition: all 1s;
+}
+.flip__card_front {
+  background-color: green;
+}
+.flip__card_back {
+  background-color: rgb(122, 55, 176);
+  transform: rotateY(180deg);
+}
+.flip:hover .flip__card_front {
+  transform: rotateY(-180deg);
+}
+.flip:hover .flip__card_back {
+  transform: rotateY(0);
+}
+
 .header {
   background-image: linear-gradient(to left, hsla(108, 58%, 60%, 0.5), hsla(102, 65%, 43%, 0.5)), url(img/hero.jpg);
   background-position: top;
@@ -269,10 +295,29 @@ body {
 }
 .four-column__box {
   border: 1px solid rgb(43, 0, 255);
-  width: calc((100% - 9rem) / 4);
   float: left;
+  width: calc((100% - 9rem) / 4);
 }
 .four-column__box:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.three-column {
+  max-width: 80%;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+.three-column::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.three-column__box {
+  float: left;
+  width: calc((100% - 6rem) / 3);
+  border: 1px solid rgb(76, 0, 255);
+}
+.three-column__box:not(:last-child) {
   margin-right: 3rem;
 }
 
@@ -296,6 +341,10 @@ body {
 .info__card:hover {
   scale: 1.1;
   box-shadow: 0 0 3px 3px hsla(0, 0%, 0%, 0.3);
+}
+
+.tours {
+  padding: 10rem 0;
 }
 
 /*# sourceMappingURL=style.css.map */

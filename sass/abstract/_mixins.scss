@@ -1,7 +1,7 @@
 
-@mixin float-two-colu($two-colum-gap){
+@mixin float-colu($gap-size, $gap-number, $column-number){
   float: left;
-    width: calc((100% - #{$two-colum-gap})/2);
+    width: calc((100% - ($gap-number * $gap-size)) / $column-number);
   }
 
 @mixin button-click($background-color){

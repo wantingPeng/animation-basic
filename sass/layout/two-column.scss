@@ -6,16 +6,17 @@
   margin: 0 auto;
 
   @include clear-float;
+
   .intro__left{
-    margin-right: $two-colum-gap;
+    margin-right: 3rem;
     border: 1px solid rgb(56, 54, 199);
-    
-    @include float-two-colu($two-colum-gap);
+    @include float-colu(3rem, 1, 2 );
+
     
   }
   .intro__right{
     border: 1px solid rgb(56, 54, 199);
-    @include float-two-colu($two-colum-gap);
+    @include float-colu(3rem, 1, 2 );
     
   }
 
