@@ -291,14 +291,10 @@ body {
 .circle {
   width: 6rem;
   height: 6rem;
-  background-color: red;
   float: left;
   shape-outside: circle(50%);
   -webkit-clip-path: circle(50%);
           clip-path: circle(50%);
-}
-.circle__img {
-  width: 5rem;
 }
 
 .header {
@@ -448,6 +444,34 @@ body {
   border: 1px solid red;
 }
 .feedback__box {
+  margin: 0 auto;
+  padding: 1rem;
   border: 1px solid rgb(89, 0, 255);
   max-width: 70%;
+  text-align: left;
+  box-shadow: 0 0 3px 3px hsla(0, 0%, 0%, 0.2);
+  transform: skewX(-5deg);
+}
+.feedback__box > * {
+  transform: skewX(5deg);
+}
+.feedback__circle {
+  margin-right: 1rem;
+}
+.feedback__img {
+  height: 100%;
+  transform: translate(-1.3rem);
+}
+.feedback__img:hover {
+  transform: scale(0.8);
+  filter: blur(1px);
+}
+.feedback__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  /* opacity: 0; */
 }/*# sourceMappingURL=main.css.map */

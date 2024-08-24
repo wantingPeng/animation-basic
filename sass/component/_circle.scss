@@ -4,11 +4,8 @@
 .circle{
   width: 6rem;
   height: 6rem;
-  background-color: red;
   float: left;
   shape-outside: circle(50%);
     clip-path: circle(50%);
-&__img{
-  width: 5rem;
-}
+
 }
