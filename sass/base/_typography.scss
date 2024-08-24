@@ -40,3 +40,33 @@ color: $head-color;
 
   font-size: $p-small;
 }
+
+.tours{
+  &__title{
+    position: absolute;
+   text-align: right;
+top: 9rem;
+right: 0;
+      background-color:$head-color;
+      color: $color-gray;
+      padding: .5rem ;
+  }
+ &__text{
+  margin: 3rem auto 0 auto;
+  
+  max-width: 80%;
+  ul> *{
+    padding: .3rem 0 .2rem 0;
+    list-style: none;
+    border-bottom:1px solid $head-color;
+ 
+}
+}
+
+&__only{
+      font-size: $font-h5;
+
+}
+
+
+}

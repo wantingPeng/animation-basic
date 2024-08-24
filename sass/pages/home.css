@@ -22,11 +22,43 @@
 
 .tours {
   padding: 10rem 0;
+  position: relative;
 }
 .tours__img {
+  height: 10rem;
+  border-radius: 3px;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.tours__img_1 {
   background-image: url(../img/nat-5.jpg);
-  height: 3rem;
+}
+.tours__img_2 {
+  background-image: url(../img/nat-6.jpg);
+}
+.tours__img_3 {
+  background-image: url(../img/nat-7.jpg);
 }
 .tours__b_1 {
   background-color: hsla(102, 65%, 43%, 0.5);
+}
+.tours__back-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(220, 246, 224);
+}
+.tours__price {
+  font-size: 3rem;
+}
+
+.feedback {
+  padding: 10rem 0;
+  border: 1px solid red;
+}
+.feedback__box {
+  border: 1px solid rgb(89, 0, 255);
+  max-width: 70%;
 }/*# sourceMappingURL=home.css.map */

@@ -2,12 +2,12 @@
 
 .flip{
 perspective: 150rem;
-height: 15rem;
+height: 25rem;
 position: relative;
 
   &__card{
     position: absolute;
-    height: 15rem;
+    height: 25rem;
     width: 100%;
    backface-visibility: hidden;
   transition: transform 1s;

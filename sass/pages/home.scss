@@ -28,14 +28,47 @@ margin-top: -20vh;
    .tours{
 
     padding: 10rem 0;
-  
+    position: relative;
+
     &__img{
-      background-image:url(../img/nat-5.jpg);
-      height: 3rem;
+      height: 10rem;
+      border-radius: 3px;
+      background-size:cover ;
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+      &_1{
+        background-image: url(../img/nat-5.jpg);
+      }
+      &_2{
+        background-image: url(../img/nat-6.jpg);
+      }
+      &_3{
+        background-image: url(../img/nat-7.jpg);
+      }
+    
     }
+  
 
     &__b_1{
       background-color: $color-2;
     }
+    &__back-box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: $color-gray;
+    }
+    &__price{
+      font-size: $font-h3;
+    }
+   }
 
+   .feedback{
+    padding:10rem 0;
+    border: 1px solid red;
+
+    &__box{
+      border: 1px solid rgb(89, 0, 255);
+      max-width: 70%;
+    }
    }

@@ -87,6 +87,28 @@ body {
   font-size: 0.7rem;
 }
 
+.tours__title {
+  position: absolute;
+  text-align: right;
+  top: 9rem;
+  right: 0;
+  background-color: rgb(60, 95, 43);
+  color: rgb(220, 246, 224);
+  padding: 0.5rem;
+}
+.tours__text {
+  margin: 3rem auto 0 auto;
+  max-width: 80%;
+}
+.tours__text ul > * {
+  padding: 0.3rem 0 0.2rem 0;
+  list-style: none;
+  border-bottom: 1px solid rgb(60, 95, 43);
+}
+.tours__only {
+  font-size: 0.9rem;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -115,6 +137,9 @@ body {
   display: inline-block;
   box-shadow: 0 0 3px 3px hsla(0, 0%, 0%, 0.2);
   text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
 }
 
 .header__button:hover {
@@ -125,11 +150,8 @@ body {
   box-shadow: 0 0.5rem 0.6rem hsla(0, 0%, 0%, 0.3);
 }
 .header__button {
-  font-size: 1.6rem;
   color: hsl(0, 0%, 100%);
-  background-color: rgb(255, 255, 255);
   padding: 0 1rem;
-  border-radius: 0.5rem;
   transition: transform 0.3s;
   position: relative;
   animation: button-hover 1s;
@@ -166,6 +188,21 @@ body {
   color: aliceblue;
 }
 .intro__button:active {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 0.6rem hsla(0, 0%, 0%, 0.3);
+}
+
+.tours__button {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0 0.5rem;
+  color: rgb(60, 95, 43);
+}
+.tours__button:hover {
+  transform: translateY(-0.2rem);
+  background-color: rgba(60, 95, 43, 0.5);
+  color: aliceblue;
+}
+.tours__button:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 0.6rem hsla(0, 0%, 0%, 0.3);
 }
@@ -213,12 +250,12 @@ body {
 
 .flip {
   perspective: 150rem;
-  height: 15rem;
+  height: 25rem;
   position: relative;
 }
 .flip__card {
   position: absolute;
-  height: 15rem;
+  height: 25rem;
   width: 100%;
   backface-visibility: hidden;
   transition: transform 1s;
@@ -242,13 +279,26 @@ body {
   background-color: rgb(240, 189, 111);
 }
 .flip__back_3 {
-  background-color: rgb(211, 254, 253);
+  background-color: rgb(109, 161, 161);
 }
 .flip:hover .flip__front {
   transform: rotateY(180deg);
 }
 .flip:hover .flip__back {
   transform: rotateY(0deg);
+}
+
+.circle {
+  width: 6rem;
+  height: 6rem;
+  background-color: red;
+  float: left;
+  shape-outside: circle(50%);
+  -webkit-clip-path: circle(50%);
+          clip-path: circle(50%);
+}
+.circle__img {
+  width: 5rem;
 }
 
 .header {
@@ -361,11 +411,43 @@ body {
 
 .tours {
   padding: 10rem 0;
+  position: relative;
 }
 .tours__img {
+  height: 10rem;
+  border-radius: 3px;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+.tours__img_1 {
   background-image: url(../img/nat-5.jpg);
-  height: 3rem;
+}
+.tours__img_2 {
+  background-image: url(../img/nat-6.jpg);
+}
+.tours__img_3 {
+  background-image: url(../img/nat-7.jpg);
 }
 .tours__b_1 {
   background-color: hsla(102, 65%, 43%, 0.5);
+}
+.tours__back-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(220, 246, 224);
+}
+.tours__price {
+  font-size: 3rem;
+}
+
+.feedback {
+  padding: 10rem 0;
+  border: 1px solid red;
+}
+.feedback__box {
+  border: 1px solid rgb(89, 0, 255);
+  max-width: 70%;
 }/*# sourceMappingURL=main.css.map */
