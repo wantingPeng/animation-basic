@@ -1,0 +1,80 @@
+
+@use "../abstract/_all" as *;
+
+.footer{
+  background-color: rgba($head-color ,.8);
+  padding: 5rem;
+  &__logo{
+    height: 5rem;
+    width: auto;
+  }
+  &__ul > *{
+    display: inline-block;
+
+    list-style: none; 
+  }
+  li:not(:last-child){
+    margin-right: 1rem;
+  }
+
+  &__ul{
+    border-top: 2px $color-gray solid ;
+text-align: left;
+  }
+  &__link{
+    display: inline-block;
+    color: $color-gray;  
+    font-size: $font-h5;
+    text-decoration: none;
+    transition: transform .2s;
+    &:hover,
+    &:active {
+      background-color: $color-gray;
+        color: rgba($head-color ,.8);
+        box-shadow: $box-shadow;
+        transform: scale(1.1);
+    }
+  }
+
+  &__right{
+    border-top: 2px $color-gray solid ;
+  }
+  &__iconbox{
+  
+    color: $color-gray;
+    font-size: $font-h4;
+    & i:not(:last-child){
+margin-right: 1.5rem;
+    }
+   
+  }
+  &__icon{
+    position: relative;
+    transition:color .6s ;
+    &:hover{
+        color:$main-font-color;
+    }
+  }
+ 
+}
+.fa{
+
+
+   &-facebook{
+    
+ @include icon-tooltip('facebook')
+}
+  &-twitter{
+  @include icon-tooltip('twitter')
+ } 
+   &-instagram{
+  @include icon-tooltip('instagram')
+ } 
+   &-tiktok{
+  @include icon-tooltip('tiktok')
+ }
+  &-youtube{
+  @include icon-tooltip('youtube')
+ }
+
+}

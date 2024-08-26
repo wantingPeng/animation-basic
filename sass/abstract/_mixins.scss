@@ -26,3 +26,14 @@
   }
 
 }
+@mixin icon-tooltip($icon-name){
+  &:hover::after{
+    content: $icon-name;
+    position: absolute;
+    margin-top: .4rem;
+    font-size: 6px;
+    top:100%;
+    left: 0;
+    opacity: 1;
+  }
+}
