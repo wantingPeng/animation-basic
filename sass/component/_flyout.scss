@@ -1,0 +1,19 @@
+@use "../abstract/_all" as *;
+
+.flyout{
+  position: absolute;
+padding: 1rem;
+background-color: $main-gray;
+top:120%;
+display: none;
+.nav__li:hover &{
+  display: block;
+  z-index: 20;
+}
+  &__ul{
+list-style: none;
+color: $text-bg-color-1;
+
+  }
+}
+

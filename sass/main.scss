@@ -10,12 +10,15 @@
 @use "component/flip";
 @use "component/circle";
 @use "component/login";
+@use "component/flyout";
+
 
 @use "layout/header"; 
 @use "layout/two-column";
 @use "layout/four-column";
 @use "layout/three.column";
 @use "layout/footer";
+@use "layout/navgation";
 
 
 @use "pages/home";

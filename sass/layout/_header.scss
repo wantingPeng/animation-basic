@@ -4,19 +4,26 @@
 
 
 .header{
+  
   background-image:linear-gradient(to left, $color-1, $color-2) ,url(img/hero.jpg);
   background-position: top;
   height: 100vh;
   background-size: cover;
   clip-path:polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
   position: relative;
+
   &__logo-box{
-    position: absolute;
+  /*   position: absolute;
     top: .5rem;
-    left: .5rem;
+    left: .5rem; */
+    margin-left: 3rem;
+    margin-right: auto;
   }
   &__logo{
-    height: 20px;
+    font-size:$font-h4;
+color: $text-bg-color-1;
+  
+
   }
   &__content-box{
     position: absolute;
