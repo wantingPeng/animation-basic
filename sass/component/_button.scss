@@ -23,7 +23,7 @@ transition: transform .3s;
 position: relative;
 animation:button-hover 1s;
 }
-  &:visited{
+  &:visited,&:link{
     color: rgb(128, 128, 128);
   }
 
