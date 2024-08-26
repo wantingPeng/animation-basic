@@ -240,5 +240,60 @@
 
  </div>
 </section>
+
+
+<section class="book">
+  <div class="book__img">
+
+<h2 class="headline uppercase margen-top-medium margen-button-large">
+  Explore the world  </h2>
+
+<div class=" book__regist"> 
+<form >
+<fieldset class="margen-button-medium">
+  <legend> Do you have a driver's license?</legend>
+    <input required type="radio" id="Yes" name="license">
+    <label for="Yes"> Yes</label>
+    
+    <input required type="radio" id="No" name="license">
+    <label for="No"> No</label>
+    
+    <input required type="radio" id="but" name="license">
+    <label for="but"> Yes, but not much driving experience </label>
+  </fieldset>
+
+  <fieldset  class="margen-button-medium">
+  <legend>Choose the sport you want to explore</legend>
+
+  <input type="checkbox" id="swim" name="sports-arts" >
+<label for="swim">swim</label>
+<input type="checkbox" id="hinking" name="sports-arts" >
+<label for="hinking">hinking</label>
+<input type="checkbox" id="ski" name="sports-arts" >
+<label for="ski">ski</label>
+</fieldset>
+
+<div class="login__group">
+<input class="login__input" type="text" id="user-name" maxlength="14" minlength="5" placeholder="Username"title="minlength>=5" required>
+<label class="login__label" for="user-name" >Username</label>
+</div>
+<div class="login__group">
+<input class="login__input" type="password" pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,16}" name="password" id="password" minlength="8" maxlength="16" required
+title="Password must contain at least one letter, one number, and be at least 8 characters long." placeholder="password">
+<label class="login__label"  for="password">Password</label></div>
+
+<div class="login__group">
+<input class="login__input"  type="email" id="email" pattern="" placeholder="Email" required >
+<label class="login__label" for="email">Email</label></div>
+
+<input class="login__regist" type="submit" value="regist">
+</form>
+</div>
+
+
+</div>
+
+
+</section>
 </body>
 </html>

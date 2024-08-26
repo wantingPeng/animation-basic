@@ -1,0 +1,63 @@
+@use "../abstract/_all" as *;
+
+.login{
+
+  &__group{
+    margin-bottom: 1rem;
+    }
+    
+    
+ &__input{
+font-size: inherit;
+padding: 3px;
+display: block;
+width: 50%;
+appearance: none;
+border: none;
+box-shadow: $box-shadow;
+background-color: rgba(rgb(221, 250, 221),0.7)
+}
+
+ &__input:focus{
+  outline: none;
+  border-bottom: 3px solid red;
+  transition: border-bottom .6s ;
+
+ }
+ &__input:focus:valid{
+  border-bottom: 3px solid $head-color;
+ }
+
+
+&__label{
+  display: block;
+  transform: translateY(0);
+}
+&__input:placeholder-shown + &__label{
+  transform: translateY(-2rem);
+ display: none;
+}
+&__regist{
+  border: none;
+  color:$head-color;
+  transition: background-color 0.6s, color 0.6s ;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  padding: .2rem .6rem;
+  @include  button-click(rgba($head-color,0.5));
+}
+}
+
+fieldset input {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border:2px solid $color-btu;
+  border-radius: 50%;
+  transition: .6s border ease;
+}
+fieldset input:checked{
+  border:4px solid $head-color;
+
+
+}

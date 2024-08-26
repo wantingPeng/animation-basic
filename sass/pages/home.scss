@@ -122,6 +122,27 @@ z-index: 999;
     opacity: .3;
   }
 }
+.book{
+  padding:7rem 0;
+  &__img{
+    margin: 0 auto;
 
+    border: 2px solid red;
+  width: 80%;
+height: 30rem;
+background-image:linear-gradient(110deg, rgba($color-gray, 0.6) 60% , transparent 50% ), url(../img/nat-10.jpg);
+background-size: cover;
+  }
+  &__regist{
+    margin-left: 2rem;
+    width: 50%;
+ 
+    font-size: 8px;
+    text-align: left;
+    
+  }
 
-
+}
+.green:checked{
+ color: green
+}
