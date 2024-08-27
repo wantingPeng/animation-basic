@@ -10,14 +10,32 @@
 
 html{
   /* font-size: 10px; */
-  font-size: 62.5%;  /* 10/16=0.625 */
+  font-size: 50%;  /* 1rem=8px 6/16=0.625 */
+  @include respond(desktop){
+    font-size: 100%;  /* 1rem=16px 16/16=1 */
+  }
+  @include respond(tab-land){
+    font-size: 87.5%;  /* 1rem=14px 14/16=0.625 */
+  }
+  @include respond(tab-por){
+    font-size:75%;  /* 1rem=10px 12/16=0.625 */
+  } 
+  @include respond(phone){
+    font-size: 62.5%;  /* 1rem=10px 8/16=0.625 */
+  }
+
+
+
 }
 body{
-font-size: 1rem;
 line-height: 1.7;
 font-family: 'Lato';
 box-sizing: border-box;
 margin: 0 1rem;
 text-align: center;
 background-color: $main-gray;
+@include respond(phone){
+  margin: 0 ;
 }
+}
+

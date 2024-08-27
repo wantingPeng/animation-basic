@@ -1,6 +1,13 @@
+/* 
+phone: <600px;
+tab-portrait<900px;
+tab-landscape:< 1200px;
+desktop <1800px;
+*/
+/* 1em=16px */
 .intro {
   padding: 11rem 0;
-  margin-top: -20vh;
+  margin-top: -10vh;
 }
 
 .info {

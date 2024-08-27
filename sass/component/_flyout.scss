@@ -5,15 +5,28 @@
 padding: 1rem;
 background-color: $main-gray;
 top:120%;
-display: none;
-.nav__li:hover &{
-  display: block;
-  z-index: 20;
+opacity: 0;
+visibility: hidden;
+transition:visibility .6s, opacity .3s;
+
+@include respond(tab-por){
+  left: -17.8rem;
+  background-color:  rgba($main-gray, .9);
+  top:0rem;
 }
+.nav__li:hover &{
+  opacity: 1;
+  visibility: visible;
+  z-index: 20;
+}  
   &__ul{
 list-style: none;
 color: $text-bg-color-1;
+&>*{
+  margin-bottom: 1.5rem;
+}
 
   }
 }
+
 

@@ -12,12 +12,36 @@
 <body>
   <header class="header">
 
-      <nav class="nav">
+      <nav class="nav" id="nav">
         <div class="header__logo-box"><i class="fa-solid fa-mountain-sun header__logo"></i></div>
+       
+        <div class="opacity">
 
       <ul class="nav__ul">
+       <div class="close">&times;</div>
+
         <li class="nav__li">
-          <a href="#">damen</a>
+          <a c href="#">damen</a>
+         <div class="flyout">
+            <ul class="flyout__ul">
+              <li>Outdoor-Bekleidung Outdoorjacken</li>
+              <li>Outdoorhosen</li>
+              <li>Shirts und Tops </li>
+              <li>Röcke und Kleider </li>
+              <li>Funktionsunterwäsche </li>
+              <li>Unterwäsche</li>
+              <li>Schwimmmode und Bademode</li>
+              <li>Röcke und Kleider </li>
+              <li>Funktionsunterwäsche </li>
+              <li>Unterwäsche</li>
+              <li>Schwimmmode und Bademode</li>
+            
+            </ul>
+          </div> 
+            
+        </li>
+        <li class="nav__li">
+          <a href="#">herren</a>
           <div class="flyout">
             <ul class="flyout__ul">
               <li>Outdoor-Bekleidung Outdoorjacken</li>
@@ -29,16 +53,19 @@
               <li>Schwimmmode und Bademode</li>
             
             </ul>
-          </div>
-            
+          </div> 
         </li>
-        <li class="nav__li"><a href="#">herren</a></li>
         <li class="nav__li"><a href="#">kinder</a></li>
         <li class="nav__li"><a href="#">ausruestung</a></li>
         <li class="nav__li"><a href="#">sale</a></li>
         <li class="nav__li"> <i class="fa-regular fa-user"></i></li>
-
+      
       </ul>
+    </div>
+
+      <div class="hamburger" id="hamburger">
+        &#9776;
+    </div>
       </nav>
 
 <div class="header__content-box">                      
@@ -362,7 +389,8 @@ title="Password must contain at least one letter, one number, and be at least 8 
   <h2 class="headline uppercase margen-top-medium margen-button-medium">
     Start booking now </h2>
     <h3 class="text__title uppercase margen-button-small">Important &ndash; Please read these terms before booking</h3>
-    <p class="text__content">
+    <div class="popcontent__p-container">
+    <p >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       Sed sed risus pretium quam. Aliquam sem et tortor consequat id. Volutpat odio facilisis mauris sit
       amet massa vitae. Mi bibendum neque egestas congue. Placerat orci nulla pellentesque dignissim enim
@@ -373,12 +401,17 @@ title="Password must contain at least one letter, one number, and be at least 8 
       vitae tortor condimentum lacinia quis vel eros donec. Sit amet facilisis magna etiam. Imperdiet sed
       euismod nisi porta.
   </p>
-
+</div>
   </div>
 </div>
 
+<script src="main.js">
 
+</script>
 </section>
+
+
+
 
 </body>
 </html>
