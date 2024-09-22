@@ -39,7 +39,9 @@ desktop <1800px;
     transform: translateY(0);
   }
 }
-*, ::after, ::before {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
@@ -100,7 +102,11 @@ body {
 
 .headline {
   display: inline-block;
-  background-image: linear-gradient(to left, hsl(108, 24%, 51%), hsl(102, 78%, 63%));
+  background-image: linear-gradient(
+    to left,
+    hsl(108, 24%, 51%),
+    hsl(102, 78%, 63%)
+  );
   background-clip: text;
   color: transparent;
   font-size: 2rem;
@@ -167,7 +173,7 @@ body {
   text-align: start;
 }
 
-[class^=button] {
+[class^="button"] {
   display: inline-block;
   box-shadow: 0 0 3px 3px hsla(0, 0%, 0%, 0.2);
   text-decoration: none;
@@ -190,7 +196,8 @@ body {
   position: relative;
   animation: button-hover 1s;
 }
-.header__button:visited, .header__button:link {
+.header__button:visited,
+.header__button:link {
   color: rgb(128, 128, 128);
 }
 .header__button::after {
@@ -377,7 +384,7 @@ body {
 }
 .login__input:focus {
   outline: none;
-  border-bottom: 3px solid red;
+  /* border-bottom: 3px solid red; */
   transition: border-bottom 0.6s;
 }
 .login__input:focus:valid {
@@ -452,7 +459,12 @@ fieldset input:checked {
 }
 
 .header {
-  background-image: linear-gradient(to left, hsla(108, 58%, 60%, 0.5), hsla(102, 65%, 43%, 0.5)), url(img/hero.jpg);
+  background-image: linear-gradient(
+      to left,
+      hsla(108, 58%, 60%, 0.5),
+      hsla(102, 65%, 43%, 0.5)
+    ),
+    url(img/hero.jpg);
   background-position: top;
   height: 50vh;
   background-size: cover;
@@ -489,7 +501,8 @@ fieldset input:checked {
 }
 
 .two-column {
-  border: 1px solid red;
+  /*   border:1px solid red;
+  */
   max-width: 85%;
   margin: 0 auto;
 }
@@ -500,7 +513,8 @@ fieldset input:checked {
 }
 .two-column .intro__left {
   margin-right: 3rem;
-  border: 1px solid rgb(56, 54, 199);
+  /*     border: 1px solid rgb(56, 54, 199);
+  */
   float: left;
   width: calc((100% - 3rem) / 2);
 }
@@ -510,7 +524,8 @@ fieldset input:checked {
   }
 }
 .two-column .intro__right {
-  border: 1px solid rgb(56, 54, 199);
+  /*   border: 1px solid rgb(56, 54, 199);
+ */
   float: left;
   width: calc((100% - 3rem) / 2);
 }
@@ -523,7 +538,8 @@ fieldset input:checked {
 .four-column {
   max-width: 80%;
   margin: 0 auto;
-  border: 1px solid red;
+  /*   border: 1px solid red;
+  */
 }
 .four-column::after {
   content: "";
@@ -531,7 +547,8 @@ fieldset input:checked {
   display: table;
 }
 .four-column__box {
-  border: 1px solid rgb(43, 0, 255);
+  /*     border: 1px solid rgb(43, 0, 255);
+  */
   float: left;
   width: calc((100% - 9rem) / 4);
 }
@@ -550,7 +567,8 @@ fieldset input:checked {
 
 .three-column {
   max-width: 80%;
-  border: 1px solid red;
+  /* border: 1px solid red;
+  */
   margin: 0 auto;
 }
 .three-column::after {
@@ -566,7 +584,8 @@ fieldset input:checked {
 .three-column__box {
   float: left;
   width: calc((100% - 6rem) / 3);
-  border: 1px solid rgb(76, 0, 255);
+  /*     border: 1px solid rgb(76, 0, 255);
+  */
 }
 .three-column__box:not(:last-child) {
   margin-right: 3rem;
@@ -606,7 +625,8 @@ fieldset input:checked {
   text-decoration: none;
   transition: transform 0.2s;
 }
-.footer__link:hover, .footer__link:active {
+.footer__link:hover,
+.footer__link:active {
   background-color: rgb(220, 246, 224);
   color: rgba(60, 95, 43, 0.8);
   box-shadow: 0 0 3px 3px hsla(0, 0%, 0%, 0.2);
@@ -782,7 +802,7 @@ fieldset input:checked {
   border-radius: 3px;
   width: 80%;
   /*     height: 50%;
-   */
+  */
   background-color: rgb(243, 245, 227);
   position: absolute;
   top: 50%;
@@ -804,7 +824,8 @@ fieldset input:checked {
   font-size: 1.5rem;
   text-decoration: none;
 }
-.popup__close:link, .popup__close:visited {
+.popup__close:link,
+.popup__close:visited {
   color: rgba(0, 0, 0, 0.8);
 }
 .popup__close:hover {
@@ -858,7 +879,8 @@ fieldset input:checked {
 }
 .popcontent__p-container {
   width: 100%;
-  border: 1px red solid;
+  /*     border: 1px red solid;
+  */
   text-align: center;
 }
 
@@ -868,7 +890,12 @@ fieldset input:checked {
 }
 
 .info {
-  background-image: linear-gradient(to bottom, hsla(108, 58%, 60%, 0.5), hsla(102, 65%, 43%, 0.5)), url(img/nat-4.jpg);
+  background-image: linear-gradient(
+      to bottom,
+      hsla(108, 58%, 60%, 0.5),
+      hsla(102, 65%, 43%, 0.5)
+    ),
+    url(img/nat-4.jpg);
   background-size: cover;
   padding: 10rem 0;
 }
@@ -919,7 +946,8 @@ fieldset input:checked {
 
 .feedback {
   padding: 7rem 0;
-  border: 1px solid red;
+  /*     border: 1px solid red;
+  */
   position: relative;
 }
 .feedback__box {
@@ -986,10 +1014,16 @@ fieldset input:checked {
 }
 .book__img {
   margin: 0 auto;
-  border: 2px solid red;
+  /*     border: 2px solid red;
+  */
   width: 80%;
   height: 30rem;
-  background-image: linear-gradient(110deg, rgba(220, 246, 224, 0.6) 60%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(
+      110deg,
+      rgba(220, 246, 224, 0.6) 60%,
+      transparent 50%
+    ),
+    url(../img/nat-10.jpg);
   background-size: cover;
 }
 .book__regist {

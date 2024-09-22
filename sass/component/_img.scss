@@ -1,63 +1,60 @@
 @use "../abstract/_all" as *;
 
-.intro__right{
+.intro__right {
   position: relative;
- 
 }
-.img{
-position: absolute;
-border-radius:3px;
-box-shadow:$box-shadow;
-width: 60%;
-z-index: 1;
-transition:z-index .1s ease-out ;
-@include respond(tab-por){
-  position: relative;
-width: 71%;
-}
-@include respond(phone){
-  margin-top: 2rem;
-  &:not(:last-child){ margin-right: 1rem;};
- width: calc((100% - 3rem) / 3);
-}
+.img {
+  position: absolute;
+  border-radius: 3px;
+  box-shadow: $box-shadow;
+  width: 60%;
+  z-index: 1;
+  transition: z-index 0.1s ease-out;
+  @include respond(tab-por) {
+    position: relative;
+    width: 71%;
+  }
+  @include respond(phone) {
+    margin-top: 2rem;
+    width: calc((100% - 3rem) / 3);
 
-  &_1{
-    top:13rem;
-left: 0;
-@include respond(tab-por){
-  top:0rem;
-}
-
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
   }
 
-  &_2{
+  &_1 {
+    top: 13rem;
+    left: 0;
+    @include respond(tab-por) {
+      top: 0rem;
+    }
+  }
+
+  &_2 {
     top: 15rem;
-left: 12rem;
-@include respond(tab-por){
- 
-  top:0rem;
-  left: 0;
-
-}
+    left: 12rem;
+    @include respond(tab-por) {
+      top: 0rem;
+      left: 0;
+    }
   }
-  &_3{
-    top:7rem;
-left: 5rem;
-@include respond(tab-por){
- 
-  top:0rem;
-  left: 0;
-}
+  &_3 {
+    top: 7rem;
+    left: 5rem;
+    @include respond(tab-por) {
+      top: 0rem;
+      left: 0;
+    }
   }
-  &:hover{
+  &:hover {
     outline-offset: 5px;
     outline: 2px $text-bg-color-1 dotted;
     z-index: 3;
-    box-shadow:$box-shadow-biger;
- transform: scale(1.1);
+    box-shadow: $box-shadow-biger;
+    transform: scale(1.1);
   }
-
 }
 .intro__right:hover .img:not(:hover) {
   transform: scale(0.9);
-      }
+}
