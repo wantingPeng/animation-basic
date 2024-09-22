@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npm run compile && react-scripts build ",
-    "compile:sass": "sass sass/main.scss style.css -w"
+    "compile:": "sass sass/main.scss style.css -w",
+    "build": "npm run compile && react-scripts build "
   },
   "author": "",
   "license": "ISC",
