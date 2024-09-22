@@ -6,7 +6,8 @@ desktop <1800px;
 */
 /* 1em=16px */
 .two-column {
-  border: 1px solid red;
+  /*   border:1px solid red;
+  */
   max-width: 85%;
   margin: 0 auto;
 }
@@ -17,7 +18,8 @@ desktop <1800px;
 }
 .two-column .intro__left {
   margin-right: 3rem;
-  border: 1px solid rgb(56, 54, 199);
+  /*     border: 1px solid rgb(56, 54, 199);
+  */
   float: left;
   width: calc((100% - 3rem) / 2);
 }
