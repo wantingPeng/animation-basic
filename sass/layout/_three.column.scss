@@ -1,21 +1,26 @@
 @use "../abstract/_all" as *;
 
-
-.three-column{
+.three-column {
   max-width: 80%;
-border: 1px solid red;
-margin: 0 auto;
-@include clear-float;
-@include respond(phone){
-  width: 60%;
-}
-  &__box{
-    @include float-colu(3rem, 2, 3 );
-    border: 1px solid rgb(76, 0, 255);
-    &:not(:last-child){margin-right:3rem;}
-    @include respond(phone){
-      width: 100%;
-      &:not(:last-child){ margin-bottom: 2rem;}
+  /* border: 1px solid red;
+ */
+  margin: 0 auto;
+  @include clear-float;
+  @include respond(phone) {
+    width: 60%;
+  }
+  &__box {
+    @include float-colu(3rem, 2, 3);
+    /*     border: 1px solid rgb(76, 0, 255);
+ */
+    &:not(:last-child) {
+      margin-right: 3rem;
     }
-   }
+    @include respond(phone) {
+      width: 100%;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }

@@ -1,39 +1,31 @@
 @use "../abstract/_all" as *;
 
-
-
-
-.header{
-  
-  background-image:linear-gradient(to left, $color-1, $color-2) ,url(img/hero.jpg);
+.header {
+  background-image: linear-gradient(to left, $color-1, $color-2),
+    url(img/hero.jpg);
   background-position: top;
   height: 50vh;
   background-size: cover;
-  clip-path:polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 100%, 0 80%);
   position: relative;
 
-
-  &__logo-box{
-
+  &__logo-box {
     margin-left: 3rem;
     margin-right: auto;
-    @include respond(tab-por){
-    position: fixed;
-    top: .5rem;
-    left: 0; 
- 
+    @include respond(tab-por) {
+      position: fixed;
+      top: 0.5rem;
+      left: 0;
     }
   }
-  &__logo{
-    font-size:$font-h4;
-color: $text-bg-color-1;
-@include respond(tab-por){
- 
-  color:  hsl(108, 52%, 26%)
+  &__logo {
+    font-size: $font-h4;
+    color: $text-bg-color-1;
+    @include respond(tab-por) {
+      color: hsl(108, 52%, 26%);
+    }
   }
-
-  }
-  &__content-box{
+  &__content-box {
     position: absolute;
     top: 50%;
     left: 50%;
