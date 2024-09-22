@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build-css && react-scripts build ",
-    "build-css": "sass sass/main.scss -o style.css"
+    "build-css": "sass sass/main.scss -o style.css",
+    "compile:sass": "sass sass/main.scss style.css -w"
   },
   "author": "",
   "license": "ISC",
